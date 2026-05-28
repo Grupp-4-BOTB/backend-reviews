@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Lms.Review.Api/Review.Api.csproj" />
+  <Project Path="Lms.Review.Application/Review.Application.csproj" />
+  <Project Path="Review.Domain/Review.Domain.csproj" />
+  <Project Path="Review.Infrastructure/Review.Infrastructure.csproj" />
+</Solution>

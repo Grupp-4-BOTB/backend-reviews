@@ -1,0 +1,9 @@
+﻿
+namespace Review.Application.DTOs
+{
+    public class CreateReviewDto
+    {
+        public int StudentId { get; set; }
+        public string Comment { get; set; } = string.Empty;
+    }
+}
