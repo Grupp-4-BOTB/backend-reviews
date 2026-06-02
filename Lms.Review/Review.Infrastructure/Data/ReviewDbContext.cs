@@ -3,18 +3,15 @@ using Review.Domain.Entities;
 
 namespace Review.Infrastructure.Data;
 
-public class ReviewDbContext : DbContext
+public class ReviewDbContext(DbContextOptions<ReviewDbContext> options) : DbContext(options)
 {
-    public ReviewDbContext(DbContextOptions<ReviewDbContext> options): base(options)
-    {
-
-    }
-
     public DbSet<ReviewEntity> Reviews { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
+
+        modelBuilder.HasDefaultSchema("reviews");
 
         modelBuilder.Entity<ReviewEntity>()
             .ToTable("Reviews", "reviews");
