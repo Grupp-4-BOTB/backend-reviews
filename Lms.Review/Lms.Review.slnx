@@ -3,4 +3,5 @@
   <Project Path="Lms.Review.Application/Review.Application.csproj" />
   <Project Path="Review.Domain/Review.Domain.csproj" />
   <Project Path="Review.Infrastructure/Review.Infrastructure.csproj" />
+  <Project Path="Review.Tests/Review.Tests.csproj" Id="e40120da-4af9-478f-a03d-50fabaf95d1a" />
 </Solution>
